@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AnimalShow = () => {
+const AnimalShow = ({ type }) => {
     return (
         <div>
-            Cow!
+            {type}
         </div>
     );
 };
