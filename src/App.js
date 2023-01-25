@@ -7,7 +7,7 @@ function getRandomAnimal() {
   return animals[Math.floor(Math.random() * animals.length)];
 }
 // console.log(Math.random() * 6);
-console.log(getRandomAnimal());
+// console.log(getRandomAnimal());
 
 function App() {
   const [animals, setAnimals] = useState([]);
@@ -21,9 +21,9 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <div className="app">
       <button onClick={handleClick}>Add Animal</button>
-      <div>{renderedAnimals}</div>
+      <div className='animal-list'>{renderedAnimals}</div>
       {/* <div>
         {animals.map((animal, index) => {
           return <AnimalShow type={animal} key={index}></AnimalShow>
